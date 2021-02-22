@@ -10,7 +10,7 @@ public class Log implements ILog, IColor {
     public Log() {
     }
 
-    public static void e(String tag, String message){
+    public static void e(String tag, String message) {
         consoleMessage(tag, message, Log.ERROR);
     }
 

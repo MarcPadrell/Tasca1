@@ -13,7 +13,7 @@ public class Main {
         Log.v("TAG","missatge estàtic de tipus verbose");
 
         Log log = new Log();
-        log.error("TAG", "missatge mitjançant Log instanciat de tipus error");
+        log.error("TAG", "\033[31mmissatge mitjançant Log instanciat de tipus error\033[39m");
         log.debug("TAG", "missatge mitjançant Log instanciat de tipus debug");
         log.warning("TAG", "missatge mitjançant Log instanciat de tipus warning");
         log.info("TAG", "missatge mitjançant Log instanciat de tipus info");
