@@ -4,12 +4,12 @@ import cat.urv.deim.asm.labs.log.Log;
 
 public class Main {
 
-    public static final String ANSI_RED = "\u001B[31m";
-    public static final String ANSI_GREEN = "\u001B[32m";
-    public static final String ANSI_YELLOW = "\u001B[33m";
-    public static final String ANSI_BLUE = "\u001B[34m";
-    public static final String ANSI_PURPLE = "\u001B[35m";
-    public static final String ANSI_RESET = "\u001B[0m";
+    //public static final String ANSI_RED = "\u001B[31m";
+    //public static final String ANSI_GREEN = "\u001B[32m";
+    //public static final String ANSI_YELLOW = "\u001B[33m";
+    //public static final String ANSI_BLUE = "\u001B[34m";
+    //public static final String ANSI_PURPLE = "\u001B[35m";
+    //public static final String ANSI_RESET = "\u001B[0m";
 
     public static void main(String[] args) {
 
@@ -20,11 +20,11 @@ public class Main {
         Log.v("TAG","missatge estàtic de tipus verbose");
 
         Log log = new Log();
-        log.error("TAG", ANSI_RED+("missatge mitjançant Log instanciat de tipus error"+ANSI_RESET));
-        log.debug("TAG", ANSI_BLUE+("missatge mitjançant Log instanciat de tipus debug"+ANSI_RESET));
-        log.warning("TAG", ANSI_YELLOW+("missatge mitjançant Log instanciat de tipus warning"+ANSI_RESET));
-        log.info("TAG", ANSI_GREEN+("missatge mitjançant Log instanciat de tipus info"+ANSI_RESET));
-        log.verbose("TAG", ANSI_PURPLE+("missatge mitjançant Log instanciat de tipus verbose"+ANSI_RESET));
+        log.error("TAG", "missatge mitjançant Log instanciat de tipus error");
+        log.debug("TAG", "missatge mitjançant Log instanciat de tipus debug");
+        log.warning("TAG", "missatge mitjançant Log instanciat de tipus warning");
+        log.info("TAG", "missatge mitjançant Log instanciat de tipus info");
+        log.verbose("TAG", "missatge mitjançant Log instanciat de tipus verbose");
 
     }
 }
