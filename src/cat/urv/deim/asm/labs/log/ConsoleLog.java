@@ -1,10 +1,8 @@
 package cat.urv.deim.asm.labs.log;
 
-import cat.urv.deim.asm.labs.log.interfaces.IColor;
-
 import java.util.Date;
 
-public class ConsoleLog implements IColor {
+public class ConsoleLog {
     public static void consoleMessage(String color, String tag, String message, String Indicator){
 
         Date data = new Date();
