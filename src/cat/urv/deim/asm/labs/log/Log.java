@@ -1,37 +1,11 @@
 package cat.urv.deim.asm.labs.log;
 
-import cat.urv.deim.asm.labs.log.interfaces.IColor;
 import cat.urv.deim.asm.labs.log.interfaces.ILog;
 
-import static cat.urv.deim.asm.labs.log.ConsoleLog.consoleMessage;
-
-public class Log implements ILog, IColor {
+public class Log extends ConsoleLog implements ILog {
 
     public Log() {
     }
-
-    public static void e(String tag, String message) {
-        consoleMessage(ANSI_RED,tag, message+ANSI_RESET, Log.ERROR);
-    }
-
-    public static void w(String tag, String message){
-        consoleMessage(ANSI_ORANGE,tag, message+ANSI_RESET, Log.WARNING);
-    }
-
-    public static void d(String tag, String message){
-
-        consoleMessage(ANSI_BLUE,tag, message+ANSI_RESET, Log.DEBUG);
-    }
-
-    public static void i(String tag, String message){
-
-        consoleMessage(ANSI_BLACK,tag, message+ANSI_RESET, Log.INFO);
-    }
-
-    public static void v(String tag, String message){
-        consoleMessage(ANSI_BLACK,tag, message+ANSI_RESET, Log.VERBOSE);
-    }
-
 
     @Override
     public void error(String tag, String message) {
