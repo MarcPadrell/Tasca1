@@ -15,7 +15,7 @@ public class Log extends ConsoleLog implements ILog {
     @Override
     public void warning(String tag, String message) {
 
-        Log.w(ANSI_ORANGE+tag, ANSI_ORANGE+message+ANSI_RESET);
+        Log.w(ANSI_ORANGE+tag, message+ANSI_RESET);
     }
 
     @Override
